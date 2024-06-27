@@ -1,0 +1,28 @@
+future
+- biểu diễn kq của 1 phép bất đồng bộ
+
+async 
+- bất đồng bộ
+- ko có await thì sẽ trả về func. có await thì sẽ trả về giá trị
+
+- future có thể trả về exception
+- Completer cũng tương tự
+
+- future builder (context, snapshot)
+if snapshot.connectionState = ConnectionState.waiting 
+	return CircleProgress
+if snapshot.hasData
+	return 
+if snapshot.error
+	return
+
+stream
+- cung cấp 1 luồng data bất đồng bộ
+- stream có thể trả về nhiều dữ liệu, yield, async*
+- để dùng thì sử dụng listen, await for
+- stream có thể bị cancel
+- await for thực hiện tuần tự, còn listen ...
+- single subscription cho lấy data 1 lần
+- broadcast subscription cho lấy data nhiều lần
+- stream controller để điểu khiển stream, dữ liệu vào là sink, dữ liệu ra stream
+- stream transformer xử lý, tính toán stream

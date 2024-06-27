@@ -56,3 +56,119 @@ Person.run();
 static run() {
     print('Person is running');
 }
+
+5. getter and setter
+
+set age(age) => this._age = age;
+person.age = 20
+
+int? get age => this._age;
+
+6. factory
+là từ khoá cho phép return constructor
+vd
+return Person.Singapore()
+
+7. constructor
+String? name;
+int? _age;
+String? address;
+
+Person(this.name, [this._age, this.address]);
+var person = Person('an')
+var person = Person('an', 20, 'Vietnam')
+=> bắt buộc phải khao báo name mà ko cần cho 2 cái còn lại
+nếu muốn thêm vào thì thêm lần lượt từ trái qua phải
+
+String? name;
+int? _age;
+String? address;
+
+Person(this.name, {this.age, this.address});
+var person = Person('an', address: 'VN', age: 20);
+
+8. Kế thừa
+constructor của Person
+Person(this._name, this._age, this.address);
+
+class Student extends Person {
+    Student(super._name, super._age, super.address);
+}
+
+name sẽ không truy cập được vì name private
+=> dùng getter và setter
+
+dart đơn kế thừa
+
+để kế thừa 2 class thì dùng 'with'
+class Office {
+    doRun() {
+        print('doRun');
+    }
+}
+class Student extends Person with Office {
+    Student(super._name, super._age, super.address);
+} 
+
+để có thể sử dùng thì Office không được có hàm khởi tạo
+
+mixin Home {
+    work() {
+        print('work');
+    }
+}
+class mixin thì không được có hàm khởi tạo constructor
+
+class Student extends Person with Office, Home {
+    Student(super._name, super._age, super.address);
+} 
+
+9. đa hình
+var person = Student('an', 20, 'VN');
+
+10. trừu tượng
+
+abstract class Person {
+    String? name;
+    int? age;
+    String? address;
+
+    Person(this.name, this.age, this.address);
+
+    void run(
+        print('run');
+    );
+
+    talk() {
+
+    }
+}
+
+phần thân hàm không được định nghĩa thì sẽ được hiểu là abstract function
+khi Student kế thừa lại abstract Person thì phải @override lại
+
+@override
+talk() {
+    print('talk');
+    throw UnimlementedError();
+}
+
+11. Interface
+abstract class Play {
+    eat();
+    play();
+}
+
+khi implement thì phải @override lại
+
+class Student implements Play {
+    @override
+    eat() {
+        print('eat');
+    }
+
+    @override
+    play() {
+        print('play');
+    }
+}
