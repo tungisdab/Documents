@@ -1,0 +1,58 @@
+1. Hàm main
+void main(List<String> args) {
+  print("Hello World");
+}
+=> Run code như python
+
+2. 
+var person = Person();
+thực hiện hàm khởi tạo mặc định
+hàm khởi tạo mặc định không có tham số
+=> thuộc tính của Person sẽ null
+
+String? name; 
+=> cho phép name được null hay không 
+
+String? name;
+=> thuộc tính public
+
+int? _age;
+=> thuộc tính private
+
+_talk() {
+    print('$_age years old');
+}
+=> private function
+
+talk() {
+    return _age;
+}
+=> mặc dù có thuộc tính private nhưng có thể gọi qua public function
+
+3. Constructor
+Person() {
+    print('This is default constructor');
+}
+=> default constructor không có tham số
+
+Person(this.name, this._age);
+=> Parameter constructor
+
+Person.Vietnam() {
+    name = 'Vietnam';
+    _age = 22;
+}
+
+Person.Singapore() {
+    name = 'Singapore';
+    _age = 25;
+}
+=> named constructor
+
+4. static
+khi dùng static thì có thể truy xuất mà không cần khởi tạo object, cho cả hàm và thuộc tính 
+Person.run();
+
+static run() {
+    print('Person is running');
+}
