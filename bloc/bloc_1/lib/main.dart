@@ -1,4 +1,4 @@
-import 'package:bloc_1/test1/home.dart';
+import 'package:bloc_1/test2/home2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: true,
       ),
-      home: const Home1(),
+      home: const Home2(),
     );
   }
 }

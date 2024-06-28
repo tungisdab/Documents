@@ -1,0 +1,35 @@
+separate: chia
+reusable: tái sử dụng
+critical: quan trọng
+appropriately: thích hợp
+interaction: phản ứng
+efficiently: hiệu quả
+posible: khả thi
+components: thành phần
+seamlessly: liền mạch
+conventions: quy ước
+daunting: làm nản lòng
+varying: thay đổi
+complex: tổ hợp
+composing: sáng tác
+aspect: diện mạo, khía cạnh
+iterate: lặp đi lặp lại
+confidence: tự tin
+attempt: nỗ lực
+predictable: có thể dự đoán
+regulating: điều tiết
+occur: xảy ra
+enforcing: thực thi
+throughout: khắp
+entire: toàn bộ
+concept: khái niệm
+several: một số
+discuss: bàn luận
+consume: tiêu thụ
+expose: phơi ra, hiển thị
+invoked: được triệu tập
+represented: đại diện
+primitive: nguyên thuỷ
+specify: chỉ định
+internally: nội bộ
+externally: bên ngoài
