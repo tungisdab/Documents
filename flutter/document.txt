@@ -27,3 +27,55 @@ stream
 - stream controller để điểu khiển stream, dữ liệu vào là sink, dữ liệu ra stream
 - stream transformer xử lý, tính toán stream
 
+counter_app
+	- observer: theo dõi sự thay đổi trạng thái
+		+ print('${bloc.runtimeType} $change');
+	- cubit: phát ra trạng thái mới để đáp ứng với các phương thức gọi
+		+ có constructor khởi tạo state ban đầu
+		+ void increment() => emit(state + 1);
+		+ void decrement() => emit(state - 1);
+	- CounterPage có BlocProvider chịu trách nhiệm kết nối view và cubit
+		+ create: (_) => Cubit(),
+		+ child: const View()
+	- để có thể lấy dữ liệu, View() cần context.read<CounterCubit>() hoặc BlocProvider.of<CounterCubit>(context).
+		+ context.read<CounterCubit>().increment()
+
+- BlocProvider: a flutter widget which provides a bloc to its children
+- BlocBuilder: a flutter widget that handles building the widget in response to new states.
+
+- Sealed: niêm phong, ko thể mở rộng bởi các lớp bên ngoài file này. Đảm bảo chỉ có lớp con nằm trong cùng file mới có thể mở rộng.
+
+- code:
+	+++
+	library timer_bloc;
+
+	part 'timer_state.dart';
+	part 'timer_evetn.dart';
+	//
+	+++
+
+	+++ (trong tệp tin timer_state.dart)
+	part of 'time_bloc.dart';
+	+++ (trong tệp tin timer_event.dart)
+	part of 'time_bloc.dart'
+
+	part of: chỉ ra rằng nó là 1 phần của 1 đơn vị biên dịch lớn hơn, liên kết với 1 "thư mục" chính
+	part: chỉ ra rằng nó có "tập tin con" nào
+
+---
+	export 'bloc/timer_bloc.dart';
+	export 'view/timer_page.dart';
+	để tái xuất nội dung của các tệp tin này, có thể dễ dàng import và dử dụng thành phần của chúng ở 1 tệp tin khác.
+
+-- 
+final class TimerInitial extends TimerState {
+  const TimerInitial(super.duration);
+}
+
+final class: không thể kế thừa bởi bất kỳ lớp nào khác, không thể mở rộng, thay đổi hành vi của lớp con.
+
+const: là 1 constructor hằng số. nghĩa là đối tượng này có thể được tạo ra ở thời điểm biên dịch và không thể thay đổi sau khi được khởi tạo
+
+super.duration: dùng 'super' để gọi constructor lớp cha, và truyền giá trị 'duration' cho nó. cho phép lớp con kế thừa thuộc tính duration từ lớp cha
+
+

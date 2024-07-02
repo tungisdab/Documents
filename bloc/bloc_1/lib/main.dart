@@ -1,23 +1,26 @@
-import 'package:bloc_1/test2/home2.dart';
-import 'package:flutter/material.dart';
+import 'package:bloc/bloc.dart';
+import 'package:bloc_1/counter_app/app.dart';
+import 'package:bloc_1/counter_app/counter_observer.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(const MyApp());
+  Bloc.observer = const CounterObserver();
+  runApp(const CounterApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Bloc',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
-        useMaterial3: true,
-      ),
-      home: const Home2(),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Bloc',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+//         useMaterial3: true,
+//       ),
+//       home: const Home2(),
+//     );
+//   }
+// }

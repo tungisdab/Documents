@@ -33,3 +33,16 @@ primitive: nguyên thuỷ
 specify: chỉ định
 internally: nội bộ
 externally: bên ngoài
+instance: ví dụ, phiên bản
+invoking: kêu gọi
+consumption: tiêu thụ
+furthermore: hơn nữa
+prevent: ngăn chặn
+sealed: niêm phong
+property: tài sản
+additionally: ngoài ra
+optimize: tối ưu hoá
+occurs: xảy ra
+informs: thông báo
+accordingly: tương ứng
+preset: đặt trước
