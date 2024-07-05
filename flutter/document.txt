@@ -78,4 +78,68 @@ const: là 1 constructor hằng số. nghĩa là đối tượng này có thể 
 
 super.duration: dùng 'super' để gọi constructor lớp cha, và truyền giá trị 'duration' cho nó. cho phép lớp con kế thừa thuộc tính duration từ lớp cha
 
+----- Bloc vs Cubit -----
++ giống:
+	- Reactive Programming để cập nhật giao diện
++ khác
+	1. Phức tạp
+	- cubit đơn giản hơn
 
+	2. Cách thức hoạt động
+	- cubit: chỉ có 1 dòng trạng thái, state thay đổi => Cubit phát ra trạng thái mới
+
+	class CounterCubit extends Cubit<int> {
+		CounterCubit() : super(0);
+
+		void increment() => emit(state + 1);
+	}
+
+	- bloc có 2 dòng riêng biệt: event & state
+	người dùng phát ra sự kiện, bloc xử lý sự kiện và phát ra trạng thái mới
+
+	class CounterEvent{}
+
+	class CounterBloc extends Bloc<CounterEvent, int> {
+		CounterBloc() : super(0);
+
+		@override
+		Stream<int> mapEventToState(CounterEvent event) async* {
+			if (event is IncrementEvent) {
+				yield state + 1;
+			}
+		}
+	}
+
+	3. Cấu trúc
+	- Cubit ko cần 'mapEventToState'
+	- Bloc triển khai 'mapEventToState', quản lý state & event
+
+
+
+----- Cấu trúc thư mục khi sử dụng bloc -----
+
+ví dụ: share
+
+- lib
+	- app
+		- app.dart
+		- app_bloc_observer.dart
+	- share
+		- bloc
+			- share_bloc.dart
+			- share_event.dart
+			- share_state.dart
+		- view
+			- view1.dart
+			- view2.dart
+		- widgets
+			- button.dart
+			- caption.dart
+			- background.dart
+		- share.dart:
+			export 'bloc/share_bloc.dart';
+			export 'view/view.dart';
+			export 'widgets/widgets.dart';
+	- main.dart
+
+---------------------------------------------
