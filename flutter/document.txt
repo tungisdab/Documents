@@ -143,3 +143,5 @@ ví dụ: share
 	- main.dart
 
 ---------------------------------------------
+
+..add() 1 cách sử dụng cú pháp cascade (cascade notation) gọi nhiều phương thức trên cùng 1 đối tượng mà ko cần ghi lại tên đối tượng nhiều lần

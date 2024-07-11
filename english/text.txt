@@ -46,3 +46,66 @@ occurs: xảy ra
 informs: thông báo
 accordingly: tương ứng
 preset: đặt trước
+various: nhiều
+authentication: xác thực
+responsible: chịu trách nhiệm
+pure: nguyên chất
+simplicity: sự đơn giản
+annotations: chú thích
+stubbed: được đặt ra
+internally: nội bộ	
+interact: tương tác
+retrieve: truy xuất
+treat: đối xử
+embarking: lên tàu
+journey: hành trình
+seamlessly: liền mạch
+toggling: chuyển đổi
+leveraging: tận dụng
+pattern: mẫu
+seperate: chia
+flexibility: uyển chuyển
+evolves: tiến hoá
+ordinary: bình thường
+dive: lặn
+intricacies: sự phức tạp
+let's lay a solid foundation: hãy đặt một nền tảng vững chắc
+essential: thứ thiết yếu
+meticulously: tỉ mỉ
+gently: dịu dàng
+mistakes: sai lầm
+emerge: chờ xuất hiện
+establish: thành lập
+organized: được tổ chức
+gather: tập trung
+sizing aspects: khía cạnh kích thước
+dimension: kích thước
+crucial: chủ yếu
+appearance: vẻ bề ngoài
+dedicated file: tập tin chuyên dụng
+intact: nguyên vẹn
+approach: tiếp cận
+seamlessly: liền mạch
+impact: tác động
+essential: thiết yếu
+equip: trang bị
+effectively: có hiệu quả
+additionally: ngoài ra
+simplifying: đơn giản hoá
+strategy: chiến lược
+utilizing: sử dụng
+integrate: tích hợp
+at the heart of it all: trọng tâm của tất cả
+supply: cung cấp
+indicate: chỉ ra
+otherwise: nếu không thì, ở phương diện khác
+appearance: vẻ bề ngoài
+adjusts: điều chỉnh
+according: theo
+preference: sự ưa thích
+finalize: hoàn thiện
+conclusion: phần kết luận
+effortless: dễ dàng
+decoupling: tách rời
+consistent: nhất quán
+appealing: hấp dẫn

@@ -1,0 +1,10 @@
+- tạo 1 folder authentication_repository
+	- có file pubspec.yaml
+	có lib/src/
+	- trong file authentication_repository có status xác thực
+	- _controller = StreamController<AuthenticationStatus>
+	- 
+yield: phát ra 1 giá trị duy nhất
+yield: phát ra tất cả các giá trị từ 1 stream hay iterable
+async: khái báo 1 function bất đồng bộ, tra về 1 future
+async*: khai báo 1 generator function  bất đồng bộ, trả về 1 StreamController
