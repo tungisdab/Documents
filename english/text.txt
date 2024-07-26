@@ -109,3 +109,40 @@ effortless: dễ dàng
 decoupling: tách rời
 consistent: nhất quán
 appealing: hấp dẫn
+particular: chi tiet
+organization: to chuc
+situated: nằm
+audience: khan gia
+adjust: dieu chinh
+insurance clain: boi thuong bao hiem
+exclusive: loai tru
+*********************************
+adjust: dieu chinh
+aircraft: may bay
+applaud: vo tay hoan nghenh
+approach: gan nhu
+aquarium: be nuoi
+archway: loi di co mai vom
+arrive: di den, dat toi
+article: bai bao
+artist: hoa si
+ascend: tang len, len cao
+comply: tuan theo
+conform: tuan thu
+abide by: tuan theo
+agreement: thoa thuan, su tin chac
+assurance: su dam bao
+cancellation: huy bo
+determine: quyet tam
+engage: dinh hon, thue 1 nguoi
+establish: thanh lap
+obligate: bat buoc
+party: tiec
+provision: su cung cap
+resolve: giai quyet
+specific: cu the
+I wonder: tôi tự hỏi
+painful: đau đớn
+accidents: tai nạn
+I suppose: tôi giả định
+quite: khá
